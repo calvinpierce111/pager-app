@@ -1,0 +1,22 @@
+const S = {
+    currentUser: null,
+    firebaseUser: null,
+    users: [],
+    posts: [],
+    messages: [],
+    follows: [],
+    savedPosts: [],
+    blockedUsers: [],
+    trending: [],
+    pendingFollows: [],
+    activeView: 'feed',
+    activeChatUserId: null,
+    viewingProfileId: null,
+    searchQuery: '',
+    authMode: 'login',
+    darkMode: false,
+    sounds: true,
+    chatWallpapers: {},
+    language: 'en',
+    onlineUsers: {}
+};
