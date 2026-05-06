@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Pager</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; background: #fff; }
+        h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 24px; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch button { padding: 8px 16px; border: 1px solid #ddd; background: #f5f5f5; border-radius: 8px; cursor: pointer; font-size: 14px; }
+        .lang-switch button.active { background: #007AFF; color: white; border-color: #007AFF; }
+        .ru, .en { display: none; }
+        .ru.show, .en.show { display: block; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btnRu" class="active" onclick="setLang('ru')">Русский</button>
+        <button id="btnEn" onclick="setLang('en')">English</button>
+    </div>
+
+    <div class="ru show">
+        <h1>Политика конфиденциальности</h1>
+        <p>Последнее обновление: 3 мая 2026 г.</p>
+        <h2>1. Какие данные мы собираем</h2>
+        <p>Мы собираем только ту информацию, которую вы предоставляете добровольно: имя пользователя, адрес электронной почты, фотографии профиля и публикуемый контент.</p>
+        <h2>2. Как мы используем данные</h2>
+        <p>Ваши данные используются исключительно для функционирования социальной сети Pager: отображение профиля, публикаций, обеспечение связи между пользователями.</p>
+        <h2>3. Хранение данных</h2>
+        <p>Данные хранятся в защищённом облачном хранилище. Мы не передаём ваши данные третьим лицам.</p>
+        <h2>4. Файлы и медиа</h2>
+        <p>Загружаемые файлы хранятся в защищённом облачном хранилище и доступны только участникам платформы.</p>
+        <h2>5. Удаление данных</h2>
+        <p>Вы можете удалить свой аккаунт в любой момент через настройки профиля. При удалении аккаунта все ваши данные удаляются без возможности восстановления.</p>
+        <h2>6. Файлы cookie</h2>
+        <p>Мы используем минимальные cookie для обеспечения авторизации. Никакие трекеры или рекламные сети не используются.</p>
+        <h2>7. Контакты</h2>
+        <p>По вопросам конфиденциальности: <a href="mailto:support@pager-tech.ru">support@pager-tech.ru</a></p>
+    </div>
+
+    <div class="en">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: May 3, 2026</p>
+        <h2>1. Data We Collect</h2>
+        <p>We collect only information you voluntarily provide: username, email, profile photos, and published content.</p>
+        <h2>2. How We Use Data</h2>
+        <p>Your data is used exclusively for Pager social network: profile display, publications, user communication.</p>
+        <h2>3. Data Storage</h2>
+        <p>Data is stored in secure cloud storage. We do not share your data with third parties.</p>
+        <h2>4. Files & Media</h2>
+        <p>Uploaded files are stored in secure cloud storage and accessible only to platform members.</p>
+        <h2>5. Data Deletion</h2>
+        <p>You can delete your account anytime via profile settings. All data is permanently deleted.</p>
+        <h2>6. Cookies</h2>
+        <p>We use minimal cookies for authentication. No trackers or ad networks are used.</p>
+        <h2>7. Contact</h2>
+        <p>Privacy questions: <a href="mailto:support@pager-tech.ru">support@pager-tech.ru</a></p>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.getElementById('btnRu').classList.toggle('active', lang === 'ru');
+            document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+            document.querySelector('.ru').classList.toggle('show', lang === 'ru');
+            document.querySelector('.en').classList.toggle('show', lang === 'en');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Pager</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; background: #fff; }
+        h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 24px; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch button { padding: 8px 16px; border: 1px solid #ddd; background: #f5f5f5; border-radius: 8px; cursor: pointer; font-size: 14px; }
+        .lang-switch button.active { background: #007AFF; color: white; border-color: #007AFF; }
+        .ru, .en { display: none; }
+        .ru.show, .en.show { display: block; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btnRu" class="active" onclick="setLang('ru')">Русский</button>
+        <button id="btnEn" onclick="setLang('en')">English</button>
+    </div>
+
+    <div class="ru show">
+        <h1>Условия использования</h1>
+        <p>Последнее обновление: 3 мая 2026 г.</p>
+        <h2>1. Принятие условий</h2>
+        <p>Регистрируясь в Pager, вы соглашаетесь с этими условиями.</p>
+        <h2>2. Контент</h2>
+        <p>Вы несёте ответственность за публикуемый контент. Запрещены: спам, оскорбления, мошенничество, насилие, нарушение авторских прав.</p>
+        <h2>3. Модерация</h2>
+        <p>Администрация может удалять контент и блокировать пользователей без уведомления.</p>
+        <h2>4. Возраст</h2>
+        <p>Сервис для лиц старше 13 лет.</p>
+        <h2>5. Ответственность</h2>
+        <p>Сервис "как есть". Мы не несём ответственности за действия пользователей.</p>
+        <h2>6. Изменения</h2>
+        <p>Условия могут обновляться.</p>
+        <h2>7. Контакты</h2>
+        <p><a href="mailto:support@pager-tech.ru">support@pager-tech.ru</a></p>
+    </div>
+
+    <div class="en">
+        <h1>Terms of Service</h1>
+        <p>Last updated: May 3, 2026</p>
+        <h2>1. Acceptance</h2>
+        <p>By registering, you agree to these terms.</p>
+        <h2>2. Content</h2>
+        <p>You are responsible for your content. Spam, harassment, fraud, violence, copyright infringement are prohibited.</p>
+        <h2>3. Moderation</h2>
+        <p>We may remove content and block users without notice.</p>
+        <h2>4. Age</h2>
+        <p>Users must be 13+ years old.</p>
+        <h2>5. Liability</h2>
+        <p>Service provided "as is". We are not liable for user actions.</p>
+        <h2>6. Changes</h2>
+        <p>Terms may be updated.</p>
+        <h2>7. Contact</h2>
+        <p><a href="mailto:support@pager-tech.ru">support@pager-tech.ru</a></p>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.getElementById('btnRu').classList.toggle('active', lang === 'ru');
+            document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+            document.querySelector('.ru').classList.toggle('show', lang === 'ru');
+            document.querySelector('.en').classList.toggle('show', lang === 'en');
+        }
+    </script>
+</body>
+</html>
